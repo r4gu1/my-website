@@ -75,7 +75,7 @@ section {
 }
 
 #home p, #about p, #skills p, #projects p, #contact p {
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     padding-bottom: 45px;
 }
@@ -132,9 +132,10 @@ section {
     text-align: center;
     background-color: #000000b4;
     padding: 20px;
-    height: 400px;
+    height: auto; /* Changed to auto to adjust based on content */
     margin: 25px;
     width: 45%;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
 }
 
 .project1 h2 {
@@ -310,7 +311,8 @@ section {
     }
 
     .box {
-        height: auto;
+        height: auto; /* Ensure box height adapts to content */
+        padding: 15px; /* Reduce padding for smaller screens */
     }
 }
 
@@ -331,5 +333,6 @@ section {
     .box {
         width: 100%;
         margin: 5px 0;
+        padding: 10px; /* Reduce padding for very small screens */
     }
 }
